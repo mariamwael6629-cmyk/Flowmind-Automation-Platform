@@ -1,0 +1,75 @@
+/* ── MONITORING ── */
+.mon-section{background:var(--bg)}
+.mon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--b2);border:1px solid var(--b2);border-radius:var(--r-xl);
+  overflow:hidden;margin-top:3.5rem}
+.mc{background:var(--bg);padding:1.5rem 1.25rem}
+.mc-head{display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:.75rem}
+.ml{font-size:11px;font-weight:600;color:var(--t3);letter-spacing:.04em;text-transform:uppercase}
+.sb{font-size:10px;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:100px}
+.sl{background:rgba(13,184,139,.1);color:var(--em)}
+.sw{background:rgba(217,154,40,.1);color:var(--am)}
+.mv{font-family:var(--ff-d);font-size:2rem;font-weight:700;
+  letter-spacing:-.04em;line-height:1;margin-bottom:.5rem;font-variant-numeric:tabular-nums}
+.ms{font-size:12px;color:var(--t3);margin-bottom:.75rem}
+.mch{display:flex;align-items:flex-end;gap:2px;height:36px}
+.mb{flex:1;border-radius:2px;min-height:3px}
+.log-box{background:var(--bg2);border:1px solid var(--b2);border-radius:var(--r-xl);
+  padding:1.5rem;margin-top:1.5rem}
+.log-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.log-live{font-size:11px;color:var(--em);font-weight:600;animation:blink 1.8s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.log{display:flex;flex-direction:column;gap:4px}
+.li{display:flex;align-items:center;gap:10px;padding:7px 10px;
+  border-radius:var(--r);background:var(--b3);font-size:12px}
+.ld{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.ld.s{background:var(--em)}.ld.w{background:var(--am)}.ld.e{background:var(--re)}
+.ln{flex:1;color:var(--t2)}.lt{color:var(--t3);font-family:var(--ff-m);font-size:11px}
+
+/* ── SCHEDULER ── */
+.sched-section{background:var(--bg2)}
+.sched{background:var(--bg3);border:1px solid var(--b2);border-radius:var(--r-xl);
+  padding:1.5rem;margin-top:3rem}
+.tri{display:flex;align-items:center;gap:12px;padding:12px 0;
+  border-bottom:1px solid var(--b3)}
+.tri:last-child{border-bottom:none}
+.ti2{width:34px;height:34px;border-radius:9px;display:flex;
+  align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.tri h5{font-size:13px;font-weight:700;margin-bottom:2px}
+.tri p{font-size:12px;color:var(--t3);font-family:var(--ff-m)}
+.ts2{margin-left:auto;font-size:10px;font-weight:700;letter-spacing:.08em;
+  padding:4px 10px;border-radius:100px;cursor:pointer;flex-shrink:0;transition:all .15s}
+.ts2.on{background:rgba(13,184,139,.12);color:var(--em);border:1px solid rgba(13,184,139,.25)}
+.ts2.off{background:rgba(255,255,255,.04);color:var(--t3);border:1px solid var(--b2)}
+
+/* ── TEAM ── */
+.team-section{background:var(--bg)}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:3.5rem}
+.tmc{background:var(--bg2);border:1px solid var(--b2);border-radius:var(--r-xl);
+  padding:1.5rem;transition:border-color .2s}
+.tmc:hover{border-color:rgba(255,255,255,.15)}
+.tm{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem}
+.tma{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
+.pr{display:flex;align-items:center;justify-content:space-between;
+  padding:6px 0;border-bottom:1px solid var(--b3)}
+.pr:last-child{border-bottom:none}
+.pl{font-size:12px;color:var(--t2)}
+.ptag{font-size:10px;font-weight:700;letter-spacing:.05em;padding:2px 8px;border-radius:100px}
+.pa{background:rgba(42,111,255,.1);color:var(--el)}
+.pe{background:rgba(13,184,139,.1);color:var(--em)}
+.pv{background:rgba(255,255,255,.05);color:var(--t3)}
+
+/* ── ANALYTICS ── */
+.analytics-section{background:var(--bg2)}
+.an-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:3.5rem}
+.anc{background:var(--bg3);border:1px solid var(--b2);border-radius:var(--r-xl);
+  padding:1.5rem;text-align:left}
+.an-lbl{font-size:11px;font-weight:600;color:var(--t3);text-transform:uppercase;
+  letter-spacing:.06em;margin-bottom:.5rem}
+.an-val{font-family:var(--ff-d);font-size:2.25rem;font-weight:700;
+  letter-spacing:-.04em;margin-bottom:.25rem;font-variant-numeric:tabular-nums}
+.an-ch{font-size:12px;color:var(--t3)}
+.chart-wrap{background:var(--bg3);border:1px solid var(--b2);border-radius:var(--r-xl);
+  padding:1.5rem;margin-top:1.5rem;overflow-x:auto}

@@ -49,7 +49,13 @@ Built for team collaboration with granular, role-based permission tiers (**Admin
 ```
 Flowmind-Automation-Platform/
 ├── frontend/
-│   └── index.html          # Complete single-page app (HTML/CSS/JS, no build step)
+│   ├── index.html          # Single-page app markup (no build step)
+│   ├── css/                # tokens, nav, overlays, common, sections/*, footer, responsive
+│   └── js/
+│       ├── ui/             # landing widgets, overlays, AI chat demo, page behaviors
+│       ├── core/           # api client, shared actions (toast, command palette)
+│       ├── features/       # auth, workflows, templates, integrations, monitoring, analytics, notifications, scheduler
+│       └── main.js         # DOMContentLoaded boot
 ├── backend/
 │   ├── app/
 │   │   ├── main.py         # FastAPI app entrypoint, CORS, router wiring
@@ -88,7 +94,7 @@ database (`flowmind.db`) and seeds demo templates/integrations/triggers/notifica
 
 ### 2. Frontend setup
 
-The frontend is a single static HTML file — no build step needed. Serve it
+The frontend is plain static HTML/CSS/JS — no build step needed. Serve it
 with any static file server, for example:
 
 ```bash
@@ -100,7 +106,7 @@ Then open `http://localhost:5500/index.html` in your browser. The page
 talks to the backend at `http://localhost:8000/api` by default. To point it
 at a different backend URL, set `window.FLOWMIND_API_BASE` before the main
 script runs (e.g. in a small inline `<script>` tag), or edit the
-`API_BASE` constant near the bottom of `index.html`.
+`API_BASE` constant in `js/core/api.js`.
 
 If the backend isn't running, the page still renders using its built-in
 static demo content — only the live data (templates, integrations,

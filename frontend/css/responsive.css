@@ -1,0 +1,29 @@
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:2.5rem;min-height:auto;padding-top:4rem}
+  .hero-canvas{display:none}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .ai-grid{grid-template-columns:1fr}
+  .mon-grid{grid-template-columns:repeat(2,1fr)}
+  .an-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .test-grid{grid-template-columns:1fr}
+  .price-grid{grid-template-columns:1fr}
+  .tpl-grid{grid-template-columns:repeat(2,1fr)}
+  .fg{grid-template-columns:1fr 1fr;row-gap:2rem}
+  .fbot{flex-direction:column;gap:.5rem;text-align:center}
+  .nav-links{display:none}
+  .nav-burger{display:flex}
+}
+@media(max-width:600px){
+  .feat-grid{grid-template-columns:1fr}
+  .tpl-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .an-grid{grid-template-columns:1fr}
+  .mon-grid{grid-template-columns:1fr}
+  .stats{flex-direction:column}
+  .stat{border-right:none;border-bottom:1px solid var(--b2)}
+  .stat:last-child{border-bottom:none}
+  .fg{grid-template-columns:1fr}
+  .price-grid{grid-template-columns:1fr}
+}

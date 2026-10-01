@@ -1,0 +1,23 @@
+/* ── Token system ── */
+:root {
+  --bg:#06080F; --bg2:#0C0F1A; --bg3:#111622;
+  --surface:rgba(12,15,26,.97); --surface2:rgba(17,22,34,.95);
+  --b1:rgba(42,111,255,.2); --b2:rgba(255,255,255,.08); --b3:rgba(255,255,255,.04);
+  --el:#2A6FFF; --vi:#7C5CDE; --em:#0DB88B; --pk:#CE6AA3; --am:#D99A28; --re:#DC5959;
+  --t1:#F0EDE6; --t2:#8A8FA8; --t3:#3A3F54;
+  --ff-d:'Fraunces',Georgia,serif;
+  --ff-b:'DM Sans',system-ui,sans-serif;
+  --ff-m:'DM Mono','Courier New',monospace;
+  --r:6px; --r-lg:10px; --r-xl:14px; --r-2xl:18px;
+  --sh:0 2px 16px rgba(0,0,0,.4);
+  --sh-lg:0 12px 48px rgba(0,0,0,.55);
+  --max:1280px;
+  color-scheme:dark;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-b);background:var(--bg);color:var(--t1);overflow-x:hidden;
+  font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{font-family:var(--ff-b);cursor:pointer}
+img{max-width:100%}

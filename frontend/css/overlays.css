@@ -1,0 +1,77 @@
+/* ── AUTH MODAL ── */
+.auth-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);
+  backdrop-filter:blur(8px);z-index:500;align-items:center;justify-content:center}
+.auth-bg.open{display:flex}
+.auth-box{background:var(--bg2);border:1px solid var(--b2);border-radius:var(--r-xl);
+  padding:2rem;width:min(400px,92vw)}
+.auth-close{position:absolute;top:1rem;right:1rem;cursor:pointer;
+  color:var(--t3);font-size:18px;line-height:1}
+.auth-close:hover{color:var(--t1)}
+.auth-tabs{display:flex;gap:0;background:var(--b3);border-radius:var(--r);
+  padding:3px;margin-bottom:1.5rem}
+.auth-tab{flex:1;text-align:center;padding:7px;font-size:13px;font-weight:600;
+  color:var(--t2);border-radius:4px;cursor:pointer;transition:all .15s}
+.auth-tab.active{background:var(--el);color:#fff}
+.auth-err{font-size:12px;color:var(--re);background:rgba(220,89,89,.08);
+  border:1px solid rgba(220,89,89,.2);border-radius:var(--r);padding:8px 12px;
+  margin-bottom:1rem;display:none}
+.auth-field{margin-bottom:1rem}
+.auth-field label{display:block;font-size:12px;font-weight:600;color:var(--t2);
+  margin-bottom:5px;letter-spacing:.03em}
+.auth-field input{width:100%;background:var(--b3);border:1px solid var(--b2);
+  border-radius:var(--r);padding:9px 12px;font-size:14px;color:var(--t1);
+  font-family:var(--ff-b);transition:border-color .15s;outline:none}
+.auth-field input:focus{border-color:rgba(42,111,255,.5)}
+.auth-submit{width:100%;background:var(--el);border:none;color:#fff;
+  font-size:14px;font-weight:600;padding:11px;border-radius:var(--r);
+  margin-top:.5rem;transition:opacity .15s}
+.auth-submit:hover{opacity:.88}
+.auth-submit:disabled{opacity:.5}
+
+/* ── TOAST ── */
+.toast-wrap{position:fixed;bottom:1.5rem;right:1.5rem;z-index:600;
+  display:flex;flex-direction:column;gap:8px}
+.toast{background:var(--bg3);border:1px solid var(--b2);border-radius:var(--r-lg);
+  padding:10px 16px;font-size:13px;color:var(--t1);box-shadow:var(--sh-lg);
+  transform:translateY(12px);opacity:0;transition:all .25s}
+.toast.show{transform:translateY(0);opacity:1}
+
+/* ── NOTIFICATION PANEL ── */
+.notif-panel{position:absolute;top:calc(100% + 8px);right:0;width:320px;
+  background:var(--surface);border:1px solid var(--b2);border-radius:var(--r-xl);
+  box-shadow:var(--sh-lg);z-index:400;display:none;overflow:hidden}
+.notif-panel.open{display:block}
+.np-head{display:flex;justify-content:space-between;align-items:center;
+  padding:14px 16px;border-bottom:1px solid var(--b3)}
+.np-title{font-size:13px;font-weight:700}
+.np-clear{font-size:12px;color:var(--el);cursor:pointer}
+.ni{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;
+  border-bottom:1px solid var(--b3)}
+.ni:last-child{border-bottom:none}
+.ni-ic{width:28px;height:28px;border-radius:7px;display:flex;
+  align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.ni p{font-size:12px;color:var(--t1);line-height:1.4;margin-bottom:2px}
+.ni time{font-size:11px;color:var(--t3)}
+
+/* ── COMMAND PALETTE ── */
+.cmd-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);
+  backdrop-filter:blur(8px);z-index:500;align-items:flex-start;
+  justify-content:center;padding-top:12vh}
+.cmd-bg.open{display:flex}
+.cmd-box{background:var(--bg2);border:1px solid var(--b2);border-radius:var(--r-xl);
+  width:min(540px,92vw);box-shadow:var(--sh-lg);overflow:hidden}
+.cmd-in-row{display:flex;align-items:center;gap:10px;padding:12px 16px;
+  border-bottom:1px solid var(--b2)}
+.cmd-inp{flex:1;background:transparent;border:none;outline:none;
+  font-size:15px;color:var(--t1);font-family:var(--ff-b)}
+.cmd-inp::placeholder{color:var(--t3)}
+.cmd-res{padding:6px 0}
+.cri{display:flex;align-items:center;gap:12px;padding:9px 16px;cursor:pointer;
+  transition:background .12s}
+.cri:hover,.cri.sel{background:var(--b3)}
+.cri-ic{width:30px;height:30px;border-radius:8px;background:var(--b2);
+  display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.cmd-foot{display:flex;gap:16px;padding:10px 16px;border-top:1px solid var(--b2)}
+.cmd-k{font-size:11px;color:var(--t3);display:flex;align-items:center;gap:5px}
+.kc{background:var(--b2);border-radius:4px;padding:2px 6px;font-family:var(--ff-m);
+  font-size:10px;color:var(--t2)}

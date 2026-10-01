@@ -1,0 +1,59 @@
+/* ── HERO ── */
+.hero{min-height:90vh;display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;gap:4rem;padding:5rem clamp(1rem,4vw,2.5rem) 4rem;
+  max-width:var(--max);margin:0 auto;position:relative}
+.hero-text{position:relative;z-index:1}
+.badge{display:inline-flex;align-items:center;gap:7px;
+  background:rgba(42,111,255,.07);border:1px solid rgba(42,111,255,.18);
+  border-radius:100px;padding:5px 13px 5px 8px;font-size:12px;
+  color:var(--t2);margin-bottom:1.75rem;font-weight:500}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--em);flex-shrink:0;
+  animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(13,184,139,.4)}50%{box-shadow:0 0 0 5px rgba(13,184,139,0)}}
+.hero h1{font-family:var(--ff-d);font-size:clamp(2.6rem,5.5vw,3.75rem);
+  font-weight:700;line-height:1.06;letter-spacing:-.04em;text-wrap:balance;margin-bottom:1.25rem}
+.hero h1 em{font-style:italic;color:var(--el)}
+.hero p{font-size:17px;color:var(--t2);line-height:1.7;max-width:420px;margin-bottom:2rem}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.btn-hero{background:var(--el);border:none;color:#fff;font-size:14px;font-weight:600;
+  padding:12px 22px;border-radius:var(--r-lg);transition:opacity .15s}
+.btn-hero:hover{opacity:.88}
+.btn-hero2{background:transparent;border:1px solid var(--b2);color:var(--t1);
+  font-size:14px;font-weight:500;padding:12px 22px;border-radius:var(--r-lg);
+  transition:all .15s}
+.btn-hero2:hover{border-color:rgba(255,255,255,.2);background:var(--b3)}
+.hero-canvas{position:relative}
+
+/* ── CANVAS WIDGET ── */
+.canvas-wrap{background:var(--bg2);border:1px solid var(--b2);border-radius:var(--r-xl);
+  overflow:hidden;box-shadow:var(--sh-lg)}
+.canvas-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;
+  border-bottom:1px solid var(--b2);background:var(--bg3)}
+.dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.d-r{background:#ff5f57}.d-y{background:#febc2e}.d-g{background:#28c840}
+.bar-title{font-size:12px;font-weight:600;color:var(--t2);margin-left:4px}
+.bar-run{font-size:11px;color:var(--em);margin-left:auto;font-weight:600}
+.bar-right{font-size:11px;color:var(--t3);margin-left:12px}
+.wf-svg{width:100%;display:block}
+
+/* ── ANIMATED LINES ── */
+@keyframes dash{to{stroke-dashoffset:-24}}
+@keyframes dash2{to{stroke-dashoffset:24}}
+@keyframes glow{0%,100%{opacity:.6}50%{opacity:1}}
+.fl{animation:dash 1.6s linear infinite}
+.fl2{animation:dash2 1.6s linear infinite}
+.gr{animation:glow 2s ease-in-out infinite}
+
+/* ── STATS STRIP ── */
+.stats{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--b2);
+  border-radius:var(--r-xl);background:var(--bg2);overflow:hidden;
+  max-width:var(--max);margin:0 auto 0}
+.stat{flex:1;min-width:140px;padding:1.75rem 1.5rem;text-align:center;
+  border-right:1px solid var(--b2)}
+.stat:last-child{border-right:none}
+.stat .n{font-family:var(--ff-d);font-size:2rem;font-weight:700;
+  letter-spacing:-.03em;color:var(--t1);font-variant-numeric:tabular-nums}
+.stat .l{font-size:12px;color:var(--t3);margin-top:3px;letter-spacing:.01em}
+
+/* ── STATS WRAPPER ── */
+.stats-wrap{padding:2.5rem clamp(1rem,4vw,2.5rem)}

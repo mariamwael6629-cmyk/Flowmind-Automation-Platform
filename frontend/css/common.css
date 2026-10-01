@@ -1,0 +1,26 @@
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ── USER CHIP ── */
+.user-chip{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;
+  cursor:pointer;padding:5px 12px 5px 5px;border:1px solid var(--b2);
+  border-radius:var(--r-lg);transition:background .15s}
+.user-chip:hover{background:var(--b3)}
+.ua{width:26px;height:26px;border-radius:50%;background:var(--el);
+  color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+/* ── CONTAINER ── */
+.container{max-width:var(--max);margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+
+/* ── SECTION SHARED ── */
+section{padding:6rem clamp(1rem,4vw,2.5rem)}
+.sec-label{display:inline-flex;align-items:center;gap:6px;font-size:11px;
+  font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--el);
+  margin-bottom:1.25rem}
+.sec-label::before{content:'';width:16px;height:1px;background:var(--el)}
+h2.st{font-family:var(--ff-d);font-size:clamp(2rem,4.5vw,3rem);font-weight:700;
+  line-height:1.12;letter-spacing:-.03em;text-wrap:balance;margin-bottom:1rem}
+h2.st em{font-style:italic;color:var(--el)}
+p.sub{font-size:16px;color:var(--t2);line-height:1.7;max-width:520px}
+.divider{height:1px;background:var(--b2);margin:0 clamp(1rem,4vw,2.5rem)}
